@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: av5201314
+    url: jdbc:mysql://127.0.0.1:3306/springcloud?characterEncoding=utf-8&useSSL=false
+# PRODUCT是你想调用的服务名称
+PRODUCT:
+  ribbon:
+    # 指定如何获取该服务的实例，默认值为 com.netflix.loadbalancer.RoundRobinRule ，即采用轮询的方式实现该服务的负载均衡
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+env: dev
