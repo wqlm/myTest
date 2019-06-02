@@ -11,4 +11,4 @@ PRODUCT:
   ribbon:
     # 指定如何获取该服务的实例，默认值为 com.netflix.loadbalancer.RoundRobinRule ，即采用轮询的方式实现该服务的负载均衡
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
-env: dev1
+env: dev
