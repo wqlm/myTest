@@ -11,3 +11,7 @@ spring:
     show-sql: true
 
 env: test1
+
+girl:
+  name: lm
+  age: 18
