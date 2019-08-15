@@ -1,7 +1,5 @@
 
 spring:
-  application:
-    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -10,7 +8,7 @@ spring:
   jpa:
     show-sql: true
 
-env: test1
+env: test
 
 girl:
   name: lm
