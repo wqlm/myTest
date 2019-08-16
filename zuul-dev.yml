@@ -1,0 +1,19 @@
+zuul:
+  routes:
+    #简单写法 服务名：路径
+#    product: /myProduct/**
+    # 自定义一个路由
+    myProduct:
+      # 要映射的地址， 将 product 服务的所有接口映射到 /myProduct/** 下
+      path: /myProduct/**
+      # serverId 是要映射的服务名称
+      serviceId: product
+      # 制空 敏感 header 让 cookie 能传递到服务中
+      sensitiveHeaders:
+  # 屏蔽掉一些路径,如下屏蔽了 /config /product 下所有的路径,
+  ignored-patterns:
+    - /config/**
+    - /product/**
+management:
+  security:
+    enabled: false
