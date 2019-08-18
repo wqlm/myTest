@@ -1,4 +1,5 @@
 zuul:
+  # 置空 敏感 header 让所有项目的 cookie 能传递到服务中
   sensitive-headers:
   routes:
     #简单写法 服务名：路径
