@@ -1,4 +1,5 @@
 zuul:
+  sensitive-headers:
   routes:
     #简单写法 服务名：路径
 #    product: /myProduct/**
@@ -8,8 +9,6 @@ zuul:
       path: /myProduct/**
       # serverId 是要映射的服务名称
       serviceId: product
-      # 制空 敏感 header 让 cookie 能传递到服务中
-      sensitiveHeaders:
   # 屏蔽掉一些路径,如下屏蔽了 /config /product 下所有的路径,
   ignored-patterns:
     - /config/**
